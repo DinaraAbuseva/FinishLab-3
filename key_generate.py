@@ -8,7 +8,6 @@ elements = "123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 keys = []
 
 
-
 for string in permutations(elements,4):
     num_cont = []
     for letter in string:
@@ -17,11 +16,7 @@ for string in permutations(elements,4):
         keys.append(string)
 
 
-def key():
-    print(
-        "".join(choice(keys))+"-\n"+ 
-          "".join(choice(keys))+"-"+ "".join(choice(keys))
-          )
+key = "".join(choice(keys))+"-\n"+"".join(choice(keys))+"-"+ "".join(choice(keys))
     
 
 
